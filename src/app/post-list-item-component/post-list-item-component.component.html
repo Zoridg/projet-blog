@@ -1,0 +1,6 @@
+<li [ngClass]="{'list-group-item': true, 'list-group-item-success': loveIts > 0, 'list-group-item-danger': loveIts < 0}">
+  <i class="col-lg-offset-10" style="font-size: large">{{ created_at | date: 'short'}}</i>
+  <h2 style="font-weight: bold">{{ title }}</h2>
+  <blockquote>{{ content }}</blockquote>
+  <button class="btn btn-success fa fa-thumbs-up" (click)="onThumbUp()">Love It</button><button class="btn btn-danger fa fa-thumbs-down" (click)="onThumbDown()">Don't Love It</button>
+</li>
