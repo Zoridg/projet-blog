@@ -1,0 +1,43 @@
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+  margin-bottom: 50px;
+  padding: 0px;
+  border-radius: inherit;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: dimgrey;
+}
+
+#deco {
+  margin-right: 5px;
+}
+
+.active {
+  background-color: grey;
+  color: white;
+}
+
+.dropdown-menu {
+  background-color: dimgrey;
+}
+
+a[aria-expanded="true"]{
+  background-color: dimgrey;
+}
+
+.nav-item .dropdown {
+  z-index: 10;
+  background-color: dimgrey;
+}
