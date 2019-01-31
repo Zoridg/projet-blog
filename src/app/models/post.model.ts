@@ -5,7 +5,6 @@ export class Post {
 
   constructor(public title: string, public contenu: string){
     this.created_at = new Date();
-    this.loveIts = 0;
   }
 
 }

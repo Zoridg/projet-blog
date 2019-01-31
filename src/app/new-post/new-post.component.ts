@@ -23,7 +23,7 @@ export class NewPostComponent implements OnInit {
   initForm() {
     this.postForm = this.formBuilder.group({
       title: ['', Validators.required],
-      contenu: ['', Validators.required]
+      synopsis: ['', Validators.required]
     });
   }
 

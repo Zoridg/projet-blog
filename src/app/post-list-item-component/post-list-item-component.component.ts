@@ -1,5 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Post} from "../models/post.model";
+import {PostsService} from "../services/posts.service";
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-post-list-item-component',
@@ -8,7 +10,7 @@ import {Post} from "../models/post.model";
 })
 export class PostListItemComponentComponent implements OnInit {
 
-  post: Post;
+  post: Post
 
   constructor() {
 
@@ -20,11 +22,9 @@ export class PostListItemComponentComponent implements OnInit {
 
   onThumbUp(){
     this.post.loveIts++;
-    console.log(this.post.loveIts);
   }
 
   onThumbDown(){
     this.post.loveIts--;
-    console.log(this.post.loveIts);
   }
 }
