@@ -25,8 +25,9 @@ export class PostsService{
   }
 
   getPosts() {
-    firebase.database().ref('/posts').on('value', (data: Datasnapshot) => {
-      this.posts = data.val() ? data.val(): [];
+    firebase.database().ref('/posts')
+      .on('value', (data: Datasnapshot) => {
+      this.posts = data.val() ? data.val() : [];
       this.emitPosts();
     });
   }

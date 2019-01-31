@@ -5,7 +5,6 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {PostListComponentComponent} from './post-list-component/post-list-component.component';
 import {PostListItemComponentComponent} from './post-list-item-component/post-list-item-component.component';
-import {FormsModule} from '@angular/forms';
 import {HeaderComponent} from './header/header.component';
 import {RouterModule, Routes} from "@angular/router";
 import {PostsService} from "./services/posts.service";

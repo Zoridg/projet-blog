@@ -1,8 +1,10 @@
-<li
-  [ngClass]="{'list-group-item': true, 'list-group-item-success': post.loveIts > 0, 'list-group-item-danger': post.loveIts < 0}">
+<li [ngClass]="{
+    'list-group-item': true,
+    'list-group-item-success': post.loveIts > 0,
+    'list-group-item-danger': post.loveIts < 0}">
   <i class="col-lg-offset-10" style="font-size: large">{{ post.created_at | date: 'short'}}</i>
   <h2 style="font-weight: bold">{{ post.title }}</h2>
-  <blockquote>{{ post.content }}</blockquote>
+  <blockquote>{{ post.contenu }}</blockquote>
   <button class="btn btn-success fa fa-thumbs-up" (click)="onThumbUp()">Love It</button>
   <button class="btn btn-danger fa fa-thumbs-down" (click)="onThumbDown()">Don't Love It</button>
 </li>
